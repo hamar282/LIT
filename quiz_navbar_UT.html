@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life in the UK App</title>
+	<meta name= "viewport" content= "width= device-width, initial-scale=1">
+	<link rel= "stylesheet" href= "C:\Users\Lucky\OneDrive\CSS_LIT\LIT/style_navbar_UT.css">
+</head>
+
+<body>
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">LIFE IN THE UK</label>
+		<ul>
+			<li><a class="active" href="#">Home</a></li>
+			<li><a href="#" onclick="toTest()">Practice Test</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Feedback</a></li>
+		</ul>
+	</nav>
+
+<!--
+	<nav class="header">
+	  <a href="#default" class="logo">LIFE IN THE UK</a>
+	  <div class="header-right">
+	    <a class="tablink" href="#home" onclick="openCity('Home', this, 'red')">Home</a>
+	    <a class="tablink" href="#test" onclick="toTest()">Practice Test</a>
+	    <a class="tablink" href="C:\Users\Lucky\OneDrive\CSS_LIT\LIT/about.html" onclick="toAbout()">About Us</a>
+	  </div>
+	</nav>
+
+-->
+<!--
+	<div id="Home" class="tabcontent">
+		<p>HOME LABEL</p>
+	</div>
+
+	<div id="Practice Test" class="tabcontent">
+		<p>PT LABEL</p>
+	</div>
+
+	<div id="About Us" class="tabcontent">
+		<p>HI</p>
+	</div>
+
+	<button class="tablink" onclick="openCity('Home', this, 'red')" id="defaultOpen">Home</button>
+	<button class="tablink" onclick="openCity('Practice Test', this, 'green')">Practice Test</button>
+	<button class="tablink" onclick="openCity('About Us', this, 'blue')">About Us</button>
+
+-->
+
+	<div class="home-box custom-box hide">
+
+		<h3>Instructions:</h3>
+		<p>Total number of questions: <span class= "total-question"></span></p>
+		<button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+	</div>
+
+	<div class="quiz-box custom-box hide">
+		<div class="question-number">
+		</div>
+
+		<div class="question-text">
+		</div>
+
+		<div class="option-container">
+		</div>
+
+		<div class="next-question-btn">
+		<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+
+		<div class="answers-indicator">
+		</div>
+
+	</div>
+	<div class="result-box custom-box hide">
+		<h1>Test Results</h1>
+		<table>
+		<tr>
+			<td>Total Questions</td>
+			<td><span class="total-question"></span></td>
+		</tr>
+		<tr>
+			<td>Attempt</td>
+			<td><span class="total-attempt"></span></td>
+		</tr>
+		<tr>
+			<td>Correct</td>
+			<td><span class="total-correct"></span></td>
+		</tr>
+		<tr>
+			<td>Wrong</td>
+			<td><span class="total-wrong"></span></td>
+		</tr>
+		<tr>
+			<td>Percentage</td>
+			<td><span class="total-percentage"></span></td>
+		</tr>
+		<tr>
+			<td>Total Score</td>
+			<td><span class="total-score"></span></td>
+		</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgain()">Try Again</button>
+		<button type="button" class="btn" onclick="goHome()">Go To Home</button>
+
+	</div>
+
+<!-- FOOTER TO WORK
+	<div class= "footer">
+		<div class= "footer-section">
+			<div class= "footer-section about"></div>	
+			<div class= "footer-section links"></div>
+			<div class= "footer-section contact-form"></div>	
+		</div>
+
+	</div>
+-->
+
+<script src="C:\Users\Lucky\OneDrive\CSS_LIT\LIT\js/questions.js"></script>
+<script src="C:\Users\Lucky\OneDrive\CSS_LIT\LIT\js/app.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</body>
+</html>

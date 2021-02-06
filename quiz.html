@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life in the UK App</title>
+	<meta name= "viewport" content= "width= device-width, initial-scale=1">
+	<link rel= "stylesheet" href= "C:\Users\Lucky\OneDrive\CSS_LIT\LIT/style.css">
+</head>
+
+<body class="quizPage">
+
+	<nav class="header">
+		
+		<!--Dynamic Nav Bat -->
+		<input type="checkbox" id="check">
+			<label for="check" class="checkbtn">
+				<i class="fas fa-bars"></i>
+		</label>
+
+	  <a class="logo" href="C:\Users\Lucky\OneDrive\CSS_LIT\LIT/home.html" onclick="goHome()">LIFE IN THE UK</a>
+	  <div class="header-right">
+	    <a class="tablink" href="C:\Users\Lucky\OneDrive\CSS_LIT\LIT/home.html" onclick="goHome()">Home</a>
+	    <a class="tablink active" onclick="toTest()">
+	    	<ion-icon name="trophy"></ion-icon>&nbsp;
+	    	Practice Test</a>
+	    <a class="tablink" href="C:\Users\Lucky\OneDrive\CSS_LIT\LIT/about.html" onclick="toAbout()">About Us</a>
+	  </div>
+	</nav>
+
+
+	<div class="home-box custom-box hide">
+
+		<h3><b>Instructions:</h3>
+		<p>
+			Click on Start Quiz<br> 
+			Click on the correct answer from the Options list
+
+		</p>
+		<p>Total number of questions: <span class= "total-question"></span></p>
+		<button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+	</div>
+
+	<div class="quiz-box custom-box hide">
+		<div class="question-number">
+		</div>
+
+		<div class="question-text">
+		</div>
+
+		<div class="option-container">
+		</div>
+
+<!--
+		<div class="previous-question-btn">
+		<button type="button_p" class="btn" onclick="goBack()">Back</button>
+		</div>
+-->
+		<div class="next-question-btn">
+		<button type="button_n" class="btn" onclick="next()">Next</button>
+		</div>
+
+		<div class="answers-indicator">
+		</div>
+
+	</div>
+
+	<div class="result-box custom-box hide">
+		<h1>Test Results</h1>
+		<table>
+		<tr>
+			<td>Total Questions</td>
+			<td><span class="total-question"></span></td>
+		</tr>
+		<tr>
+			<td>Attempt</td>
+			<td><span class="total-attempt"></span></td>
+		</tr>
+		<tr>
+			<td>Correct</td>
+			<td><span class="total-correct"></span></td>
+		</tr>
+		<tr>
+			<td>Wrong</td>
+			<td><span class="total-wrong"></span></td>
+		</tr>
+		<tr>
+			<td>Percentage</td>
+			<td><span class="total-percentage"></span></td>
+		</tr>
+		<tr>
+			<td>Total Score</td>
+			<td><span class="total-score"></span></td>
+		</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgain()">Take the Next Test!</button>
+		<!--<button type="button" class="btn" onclick="goHome()">Go To Home</button> -->
+	</div>
+
+<!--
+	<footer class= "footer">
+		<a>&copy; Copyrights Reserved | 
+			<a class= "tc" href ="tc">
+			Terms & Conditions
+			</a>
+		</a>
+
+	</footer>
+-->	
+	<script src="C:\Users\Lucky\OneDrive\CSS_LIT\LIT\js/questions.js"></script>
+	<script src="C:\Users\Lucky\OneDrive\CSS_LIT\LIT\js/app.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+
+
+</body>
+</html>
