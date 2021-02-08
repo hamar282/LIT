@@ -30,7 +30,7 @@ body video{
 */
 
 body.homePage{
-	background: url("https://github.com/hamar282/LIT/tree/main/img/blue3.jpg");
+	background: url("img/blue3.jpg");
 	/*background-position: center;*/
 	background-repeat: no-repeat;
 	background-size: cover;
