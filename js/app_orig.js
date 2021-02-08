@@ -1,0 +1,220 @@
+
+
+//console.log(quiz)
+
+const questionNumber = document.querySelector(".question-number");
+const questionText = document.querySelector(".question-text");
+const optionContainer = document.querySelector(".option-container");
+const answersIndicatorContainer = document.querySelector(".answers-indicator");
+const homeBox = document.querySelector(".home-box");
+const quizBox = document.querySelector(".quiz-box");
+const resultBox = document.querySelector(".result-box");
+
+let questionCounter = 0;
+let currentQuestion;
+let availableQuestions =[];
+let availableOptions =[];
+let correctAnswers = 0;
+let attempt = 0;
+
+
+//questions into availablequestion array
+function setAvailableQuestions(){
+	const totalQuestion = quiz.length;
+	for(let i=0; i<totalQuestion; i++)
+	{
+		availableQuestions.push(quiz[i])
+		//console.log(i)
+	}
+	//console.log(availableQuestions)
+}
+
+//set question number, questions and options
+function getNewQuestion(){
+
+	//set question number
+	questionNumber.innerHTML = "Question " + (questionCounter +1) + " of " + quiz.length;
+
+	//set questiontext and get randomquestions
+	const questionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)]
+	currentQuestion = questionIndex;
+	questionText.innerHTML = currentQuestion.q;
+
+	//position of the questionIndex from the availableQuestion
+	const index1 = availableQuestions.indexOf(questionIndex);
+	//console.log(index1)
+	//console.log(questionIndex)
+
+	//remove the questionIndex from the availablequestions array so that the questions do not repeat
+	availableQuestions.splice(index1,1);	
+	//console.log(availableQuestions)
+
+	//set options and the length of the options
+	const optionLen = currentQuestion.options.length
+	//console.log(currentQuestion.options)
+
+	//push options into availableOptions array
+	for(let i=0; i<optionLen; i++)
+	{
+		availableOptions.push(i)
+	}
+
+	optionContainer.innerHTML = '';
+	let animationDelay = 0.2;
+	//create options in html
+	for(let i=0; i<optionLen; i++)
+	{
+		//random option
+		const optionIndex = availableOptions[Math.floor(Math.random() * availableOptions.length)];
+		//position of the optionIndex from availableoptions
+		const index2 = availableOptions.indexOf(optionIndex);
+		//remove the optionindex from the availableOptions so that the options does not repeat
+		availableOptions.splice(index2,1);
+		//console.log(optionIndex)
+		//console.log(availableOptions)
+		const option = document.createElement("div");
+		option.innerHTML = currentQuestion.options[optionIndex];
+		option.id = optionIndex;
+		option.style.animationDelay = animationDelay + 's';
+		animationDelay = animationDelay + 0.2;
+		option.className = "option";
+		optionContainer.appendChild(option)
+		option.setAttribute("onclick", "getResult(this)");
+	}
+
+	questionCounter++
+}
+
+//Result of current attempt
+function getResult(element){
+	const id = parseInt(element.id);
+	//console.log(typeof id)
+	//compare the selected option to the answer
+	if(id === currentQuestion.answer){
+		//Set Green for correct option
+		element.classList.add("correct");
+		//console.log("answer is correct");
+
+		//add indicator to the correct mark
+		updateAnswerIndicator("correct");
+		correctAnswers++;
+		//console.log("correct:" +correctAnswers);
+	}
+	else
+	{
+		element.classList.add("wrong");
+		//console.log("answer is wrong");
+
+		//add indicator to the wrong mark
+		updateAnswerIndicator("wrong");
+
+		 optionLen = optionContainer.children.length;
+		 for(let i = 0; i<optionLen; i++) {
+		 	if(parseInt(optionContainer.children[i].id) === currentQuestion.answer){
+		 			optionContainer.children[i].classList.add("correct");
+		 	}
+		 }
+
+	}
+	//console.log(optionElement.innerHTML)
+
+	attempt++;
+	unclickableOptions();
+}
+
+function unclickableOptions(){
+	const optionLen = optionContainer.children.length;
+	for(let i=0; i<optionLen; i++){
+		optionContainer.children[i].classList.add("already_answered");
+	}
+}
+
+function answersIndicator(){
+	answersIndicatorContainer.innerHTML = '';
+	const totalQuestion = quiz.length;
+	for (let i=0; i<totalQuestion; i++){
+		const indicator = document.createElement("div");
+		answersIndicatorContainer.appendChild(indicator);
+	}
+}
+
+function updateAnswerIndicator(markType){
+	//console.log(markType)
+	answersIndicatorContainer.children[questionCounter -1].classList.add(markType)
+}
+
+function next(){
+	if(questionCounter === quiz.length)
+	{
+		//console.log("quiz over");
+		quizOver();
+	}
+	else
+	{
+		getNewQuestion();
+	}	
+}
+
+function quizOver(){
+
+	quizBox.classList.add("hide");
+	//show resultbox
+	resultBox.classList.remove("hide");
+	quizResult();
+}
+
+function quizResult(){
+	resultBox.querySelector(".total-question").innerHTML = quiz.length;
+	resultBox.querySelector(".total-attempt").innerHTML = attempt;
+	resultBox.querySelector(".total-correct").innerHTML = correctAnswers;
+	resultBox.querySelector(".total-wrong").innerHTML = attempt - correctAnswers;
+	const percentage = (correctAnswers/quiz.length) * 100;
+	resultBox.querySelector(".total-percentage").innerHTML = percentage.toFixed() + "%"; 
+	resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + quiz.length;
+
+}
+
+function resetQuiz(){
+	questionCounter = 0;
+	correctAnswers = 0;
+	attempt = 0;
+}
+
+function tryAgain(){
+	//hide the resultbox
+	resultBox.classList.add("hide");
+	//show the quizbox
+	quizBox.classList.remove("hide");
+	resetQuiz();
+	startQuiz();
+}
+
+function goHome(){
+	//hide the resultbox
+	resultBox.classList.add("hide");
+	//show the HomeBox
+	homeBox.classList.remove("hide");
+	resetQuiz();
+}
+
+//START OF THE PAGE
+
+function startQuiz(){
+	//window.onload = function(){
+
+	//hide homebox
+	homeBox.classList.add("hide");
+	//show quizBox
+	quizBox.classList.remove("hide");	
+	//load questions into setAvailableQuestions array
+	setAvailableQuestions();
+	//load new questions
+	getNewQuestion();
+	//Answer indicators
+	answersIndicator();
+}
+
+//Total number of questions in the MainPage
+window.onload = function(){
+	homeBox.querySelector(".total-question").innerHTML = quiz.length;
+}
