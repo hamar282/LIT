@@ -30,7 +30,7 @@ body video{
 */
 
 body.homePage{
-	background: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/blue3.jpg");
+	background: url("https://github.com/hamar282/LIT/tree/main/img/blue3.jpg");
 	/*background-position: center;*/
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -38,7 +38,7 @@ body.homePage{
 }
 
 body.quizPage{
-	background: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/LondonEye.jpg");
+	background: url("https://github.com/hamar282/LIT/tree/main/img/LondonEye.jpg");
 	/*background-position: center;*/
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -46,7 +46,7 @@ body.quizPage{
 }
 
 body.aboutPage{
-	background-image: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/blue1.jpg");
+	background-image: url("https://github.com/hamar282/LIT/tree/main/img/blue1.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -55,7 +55,7 @@ body.aboutPage{
 }
 
 body.tc{
-	background-image: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/geo5.jpg");
+	background-image: url("https://github.com/hamar282/LIT/tree/main/img/geo5.jpg");
 	/*background-position: center;*/
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -64,7 +64,7 @@ body.tc{
 }
 
 body.faq{
-	background-image: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/blue2.jpg");
+	background-image: url("https://github.com/hamar282/LIT/tree/main/img/blue2.jpg");
 	/*background-position: center; */
 	background-repeat: no-repeat;
 	background-size: 2000px 1000px;
@@ -73,7 +73,7 @@ body.faq{
 }
 
 body.cus{
-	background-image: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/pier1.jpg");
+	background-image: url("https://github.com/hamar282/LIT/tree/main/img/pier1.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
