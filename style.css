@@ -495,7 +495,7 @@ footer .cr, footer .tc{
 
 .quiz-box .answers-indicator div.correct{
 	background-color: green; 
-	background-image: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/correct.png");
+	background-image: url("img/correct.png");
 	background-size: 150%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -503,7 +503,7 @@ footer .cr, footer .tc{
 
 .quiz-box .answers-indicator div.wrong{
 	background-color: red; 
-	background-image: url("C:/Users/Lucky/OneDrive/CSS_LIT/LIT/img/wrong.png");
+	background-image: url("img/wrong.png");
 	background-size: 150%;
 	background-repeat: no-repeat;
 	background-position: center;
