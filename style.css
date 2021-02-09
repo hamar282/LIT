@@ -569,11 +569,6 @@ footer .cr, footer .tc{
 		padding: 15px 30px;
 	}
 
-	.homecontent{
-		padding: 20px;
-		margin: 10px;
-	}
-
 }
 
 /*HOME PAGE CONTENT
@@ -609,7 +604,7 @@ footer .cr, footer .tc{
 		height: 20px;
 	}
 	.homedesc p{
-		font-size: 13px;
+		font-size: 10px;
 
 	}
 
