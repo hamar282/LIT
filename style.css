@@ -568,6 +568,12 @@ footer .cr, footer .tc{
 		left: 100px;
 		padding: 15px 30px;
 	}
+
+	.homecontent{
+		padding: 20px;
+		margin: 10px;
+	}
+
 }
 
 /*HOME PAGE CONTENT
