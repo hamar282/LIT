@@ -361,6 +361,7 @@ footer .cr, footer .tc{
 }
 
 #clockdiv{
+	color: #009688;
 	position: relative;
 	float: right;
 	color: #009688;
