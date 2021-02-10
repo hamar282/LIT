@@ -243,9 +243,6 @@ body.cus{
 }
 
 
-
-
-
 footer{
 	overflow: auto;
 
@@ -363,6 +360,13 @@ footer .cr, footer .tc{
   background-color: #886363;
 }
 
+#clockdiv{
+	position: relative;
+	float: right;
+	color: #009688;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0px;
+}
 
 .quiz-box .question-number,
 .quiz-box .question-text,
@@ -378,7 +382,7 @@ footer .cr, footer .tc{
 	font-size: 16px;  /*Question text size*/
 	color: #009688;
 	font-weight: 600;
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;  /*bottom line after question number*/
 	padding-bottom: 10px;
 	line-height: 25px;
 }
@@ -568,7 +572,6 @@ footer .cr, footer .tc{
 		left: 100px;
 		padding: 15px 30px;
 	}
-
 }
 
 /*HOME PAGE CONTENT
