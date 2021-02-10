@@ -385,6 +385,8 @@ footer .cr, footer .tc{
 	border-bottom: 1px solid #cccccc;  /*bottom line after question number*/
 	padding-bottom: 10px;
 	line-height: 25px;
+	margin: 0;
+
 }
 .quiz-box .question-text{
 	font-size: 18px;  /*Question font*/
