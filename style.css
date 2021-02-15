@@ -833,3 +833,14 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #cccccc;
 }
+
+*/
+
+.contactus{
+		width: 700px;
+		height: 480px; 
+		margin-left: 60px;
+		margin-top: 30px;
+		font-family: 'Montserrat', sans-serif;
+
+}
