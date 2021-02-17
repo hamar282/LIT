@@ -125,6 +125,7 @@ body.cus{
   float: right;
 }
 
+/*
 .checkbtn{
 	font-size: 25px;
 	color: white;
@@ -138,12 +139,15 @@ body.cus{
 #check{
 	display: none;
 }
+*/
 
 @media (max-width: 767px){     /*900*/
+	/*
 	.checkbtn{
 		display: block;
 	}
-	
+	*/
+	/*
 	.header-right{
 		position: fixed;
 		width: 40%;
@@ -161,6 +165,24 @@ body.cus{
 		line-height: 30px;
 		font-size: 18px;
 		float: none;
+	}
+
+	*/
+	.header-right{
+		position: relative;
+		display: flex;
+		margin-right: 30%;
+
+	}
+
+	.header-right a{
+		margin: 5px 0;
+		line-height: 10px;
+		font-size: 13px;
+		padding: 10px;
+		text-align: center;
+	}
+
 
 	}
 	
@@ -169,9 +191,11 @@ body.cus{
 		color: black;
 	}
 	
+	/*
 	#check:checked ~ .header-right{
 		left: 0;
 	}
+	*
 /*
 	.homedesc p{
 
@@ -558,7 +582,7 @@ footer .cr, footer .tc{
 		margin-bottom: 15px;
 	}
 	body{
-		padding: 15px;
+		padding: 10px;
 	}
 
 	
@@ -571,10 +595,25 @@ footer .cr, footer .tc{
 		font-size: 13px;
 
 	}
-	home-box .btn{
+	
+	.home-box .btn{
+		font-size: 10px;
 		position: relative;
 		left: 100px;
-		padding: 15px 30px;
+		padding: 10px 10px;
+	}
+
+	.quiz-box .question-number,
+	.quiz-box .question-text,
+	.quiz-box .option-container .option{
+		font-size: 12px;
+	}
+
+
+
+	.next-question-btn .btn{
+		padding: 15px;
+		font-size: 10px;
 	}
 }
 
@@ -609,8 +648,20 @@ footer .cr, footer .tc{
 		background-size: cover;
 		position: inherit;
 		height: 20px;
+		display: flex;
+
 	}
+
+	.homedesc{
+		position: relative;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		margin-left: -10%;
+	}
+	
 	.homedesc p{
+		padding: 0 0;
 		font-size: 10px;
 
 	}
@@ -624,8 +675,17 @@ footer .cr, footer .tc{
 	}
 
 	.footer{
-		display: none;
+		/*display: none;*/
+		font-size: 10px;
 
+	}
+
+	.footer .cr{
+		font-size: 10px;
+	}
+
+	.footer .tc{
+		font-size: 10px;
 	}
 	/*WORK FROM HERE
 
@@ -637,6 +697,14 @@ footer .cr, footer .tc{
 		font-style: justify;
 		}
 		*/
+
+	.abt .desc{
+		font-size: 10px;
+		text-align: justify;
+		width: 80%;
+	}
+
+
 
 	}
 
