@@ -171,7 +171,7 @@ body.cus{
 	.header-right{
 		position: relative;
 		display: flex;
-		margin-right: 30%;
+		margin-right: 20%;
 
 	}
 
@@ -444,6 +444,11 @@ footer .cr, footer .tc{
 
 }
 
+	.next-question-btn .btn{
+		padding: 15px;
+		font-size: 15px;
+	}
+
 .quiz-box .option-container .option.already_answered{
 	pointer-events: none;
 }
@@ -501,7 +506,7 @@ footer .cr, footer .tc{
 
 
 .quiz-box .btn{
-	margin: 15px 0;
+	margin: 10px 0;
 }
 
 /*
@@ -599,7 +604,7 @@ footer .cr, footer .tc{
 	.home-box .btn{
 		font-size: 10px;
 		position: relative;
-		left: 100px;
+		left: 0;
 		padding: 10px 10px;
 	}
 
@@ -704,6 +709,21 @@ footer .cr, footer .tc{
 		width: 80%;
 	}
 
+	#clockdiv{
+		font-size: 10px;
+	}
+
+	.faq .faqdesc .faqdesc-link{
+		padding: 10px;
+		font-size: 10px;
+	}
+
+	div .answer p{
+		font-size: 10px;
+	}
+	/*.faq .faqdesc .faqdesc-link .answer p{
+		font-size: 10px;
+	}*/
 
 
 	}
