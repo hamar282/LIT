@@ -168,6 +168,12 @@ body.cus{
 	}
 
 	*/
+
+	.header a.logo {
+	  font-size: 15px;
+	  font-weight: bold;
+	}
+
 	.header-right{
 		position: relative;
 		display: flex;
@@ -176,10 +182,9 @@ body.cus{
 	}
 
 	.header-right a{
-		margin: 5px 0;
 		line-height: 10px;
 		font-size: 13px;
-		padding: 10px;
+		padding: 10px 10px;
 		text-align: center;
 	}
 
@@ -196,7 +201,7 @@ body.cus{
 		left: 0;
 	}
 	*
-/*
+
 	.homedesc p{
 
 	
@@ -316,6 +321,13 @@ footer .cr, footer .tc{
 
 }
 
+#fq ion-icon{
+	color: white;
+	font-size: 22px;
+	position: fixed;
+	left: 80px;
+}
+
 #fq:hover{
 	color: black;
 	
@@ -324,6 +336,7 @@ footer .cr, footer .tc{
 #contact{
 	color: white;
 	text-decoration: none;
+	text-align: center;
 
 }
 
@@ -620,6 +633,16 @@ footer .cr, footer .tc{
 		padding: 15px;
 		font-size: 10px;
 	}
+
+	.quiz-box .answers-indicator div{
+		height: 15px;    /*Indicators size and width*/          
+		width: 13px;
+		display: inline-block;
+		background-color: #cccccc;
+		border-radius: 50%;
+		margin-right: 3px;
+		margin-top: 10px;
+	}
 }
 
 /*HOME PAGE CONTENT
@@ -706,7 +729,8 @@ footer .cr, footer .tc{
 	.abt .desc{
 		font-size: 10px;
 		text-align: justify;
-		width: 80%;
+		width: 100%;
+		overflow: auto;
 	}
 
 	#clockdiv{
@@ -807,7 +831,7 @@ footer .cr, footer .tc{
 */
 
 .faqdesc{
-	background-color: #49677C;
+	background-color: #D6DBDF ;
 	border-radius: 10px;
 	margin: 20px;
 	padding: 5px;
@@ -816,7 +840,9 @@ footer .cr, footer .tc{
 
 .faqdesc-link{
 	font-size: 13px;
-	color: rgba(255,255,255,.8);
+	color: black;
+	font-weight: bold;
+	/*color: rgba(255,255,255,.8);*/
 	text-decoration: none;
 	width: 100%;
 	display: flex;
