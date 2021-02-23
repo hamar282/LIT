@@ -16,7 +16,7 @@ let availableQuestions =[];
 let availableOptions =[];
 let correctAnswers = 0;
 let attempt = 0;
-let testQuestion = 24;  //--added
+let testQuestion = 5;  //--added
 
 
 //questions into availablequestion array
