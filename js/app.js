@@ -258,10 +258,8 @@ function quizResult(){
 
 }
 
-function resetQuiz(){
-	questionCounter = 0;
-	correctAnswers = 0;
-	attempt = 0;
+
+function counter(){
 
 	// 45 minutes from now
 	var time_in_minutes = 45;
@@ -296,7 +294,14 @@ function resetQuiz(){
 		var timeinterval = setInterval(update_clock,1000);
 	}
 	run_clock('clockdiv',deadline);
+}
 
+
+
+function resetQuiz(){
+	questionCounter = 0;
+	correctAnswers = 0;
+	attempt = 0;
 }
 
 function tryAgain(){
@@ -387,6 +392,8 @@ function startQuiz(){
 	getNewQuestion();
 	//Answer indicators
 	answersIndicator();
+	//show countdown timer
+	counter();
 }
 
 //Total number of questions in the MainPage

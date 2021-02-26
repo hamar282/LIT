@@ -837,7 +837,14 @@ footer .cr, footer .tc{
 
 .tcdesc{
 	color: white;
-	font-size: 15px;
+	font-size: 13px;
+	padding: 5px;
+	position: fixed;
+	left: 40px;
+	width: 90%;
+	text-align: justify-all;
+	animation: fadeInRight 1s ease;
+	overflow: auto;
 
 }
 
