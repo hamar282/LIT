@@ -258,46 +258,6 @@ function quizResult(){
 
 }
 
-
-function counter(){
-
-	// 45 minutes from now
-	var time_in_minutes = 45;
-	var current_time = Date.parse(new Date());
-	var deadline = new Date(current_time + time_in_minutes*60*1000);
-
-
-	function time_remaining(endtime){
-		var t = Date.parse(endtime) - Date.parse(new Date());
-		var seconds = Math.floor( (t/1000) % 60 );
-		var minutes = Math.floor( (t/1000/60) % 60 );
-		var hours = Math.floor( (t/(1000*60*60)) % 24 );
-		var days = Math.floor( t/(1000*60*60*24) );
-		return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
-	}
-	function run_clock(id,endtime)
-	{
-		var clock = document.getElementById(id);
-		function update_clock()
-		{
-			var t = time_remaining(endtime);
-			//clock.innerHTML = 'minutes: '+t.minutes+'<br>seconds: '+t.seconds;
-			clock.innerHTML = 'Time left: '+t.minutes+': '+t.seconds;
-
-			if(t.total<=0)
-			{ 
-				clearInterval(timeinterval);
-				quizOver();
-			}
-		}
-		update_clock(); // run function once at first to avoid delay
-		var timeinterval = setInterval(update_clock,1000);
-	}
-	run_clock('clockdiv',deadline);
-}
-
-
-
 function resetQuiz(){
 	questionCounter = 0;
 	correctAnswers = 0;
@@ -313,6 +273,36 @@ function tryAgain(){
 	startQuiz();
 }
 
+function counter(){
+
+	var time = 45 * 60,
+	    start = Date.now(),
+	    mins = document.getElementById('minutes'),
+	    secs = document.getElementById('seconds'),
+	    timer;
+
+	function countdown() {
+
+	  var timeleft = Math.max(0, time - (Date.now() - start) / 1000),
+	      m = Math.floor(timeleft / 60),
+	      s = Math.floor(timeleft % 60);
+
+	  mins.firstChild.nodeValue = m;
+	  secs.firstChild.nodeValue = s;
+	  
+	  if(timeleft == 0){
+	  	quizOver();
+	  	clearInterval(timer);
+	  	}
+
+	  if(questionCounter === testQuestion)
+	  {
+	  	clearInterval(timer);
+	  }
+	}
+
+	timer = setInterval(countdown, 200);
+}
 
 function goHome(){
 	//hide the resultbox

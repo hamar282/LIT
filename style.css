@@ -397,6 +397,16 @@ footer .cr, footer .tc{
   background-color: #886363;
 }
 
+#timer{
+	font-size: 13px;
+	color: #009688;
+	position: relative;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+}
+
+/*
 #clockdiv{
 	font-size: 13px;
 	color: #009688;
@@ -406,6 +416,7 @@ footer .cr, footer .tc{
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 0px;
 }
+*/
 
 .quiz-box .question-number,
 .quiz-box .question-text,
@@ -658,6 +669,15 @@ footer .cr, footer .tc{
 	margin: 30px 0;
 	}
 
+	#timer{
+	font-size: 10px;
+	color: #009688;
+	position: relative;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+}
+
 }
 
 /*HOME PAGE CONTENT
@@ -764,9 +784,10 @@ footer .cr, footer .tc{
 		overflow: auto;
 	}
 
-	#clockdiv{
+	/*#clockdiv{
 		font-size: 10px;
 	}
+	*/
 
 	.faq .faqdesc .faqdesc-link{
 		padding: 10px;
@@ -895,7 +916,7 @@ footer .cr, footer .tc{
 
 
 .faqdesc ion-icon{
-	color: #e7d5ff;
+	color: blue;
 	padding: 20px;
 
 }
