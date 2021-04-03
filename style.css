@@ -55,19 +55,18 @@ body.aboutPage{
 }
 
 body.tc{
-	background-image: url("img/geo5.jpg");
+	background-image: url("img/blue3.jpg");
 	/*background-position: center;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100px;
-
 }
 
 body.faq{
 	background-image: url("img/blue2.jpg");
 	/*background-position: center; */
 	background-repeat: no-repeat;
-	background-size: 2000px 1000px;
+	background-size: 2000px 4000px;
 	height: 100vh;
 
 }
@@ -580,7 +579,7 @@ footer .cr, footer .tc{
 
 
 .result-box h1{
-	font-size: 36px;
+	font-size: 30px;
 	line-height: 42px;
 	color: #009688;
 }
@@ -604,6 +603,7 @@ footer .cr, footer .tc{
 
 .result-box .btn{
 	margin-right: 20px;
+	font-weight: bold;
 }
 
 @media(max-width: 767px){
@@ -779,9 +779,8 @@ footer .cr, footer .tc{
 
 	.abt .desc{
 		font-size: 10px;
-		text-align: justify;
 		width: 100%;
-		overflow: auto;
+		overflow: none;
 	}
 
 	/*#clockdiv{
@@ -853,7 +852,7 @@ footer .cr, footer .tc{
 	font-size: 15px;
 	color: white;
 	text-align: justify;
-	width: 60%;
+	width: 80%;   /*content desc width in AboutUs*/
 }
 
 .tcdesc{
@@ -890,14 +889,18 @@ footer .cr, footer .tc{
 */
 
 .faqdesc{
-	background-color: #D6DBDF ;
+	background-color: #D6DBDF;
 	border-radius: 10px;
+	position: relative;
+	left: 15px;
+	bottom: 15px;
 	margin: 20px;
 	padding: 5px;
 	box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
 }
 
 .faqdesc-link{
+
 	font-size: 13px;
 	color: black;
 	font-weight: bold;
