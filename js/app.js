@@ -16,8 +16,7 @@ let availableQuestions =[];
 let availableOptions =[];
 let correctAnswers = 0;
 let attempt = 0;
-let testQuestion = 5;  //--added
-
+let testQuestion = 24;  //--added
 
 //questions into availablequestion array
 function setAvailableQuestions(){
@@ -275,7 +274,7 @@ function tryAgain(){
 
 function counter(){
 
-	var time = 45 * 60,
+	var time = 1 * 60,
 	    start = Date.now(),
 	    mins = document.getElementById('minutes'),
 	    secs = document.getElementById('seconds'),

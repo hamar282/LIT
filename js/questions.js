@@ -973,6 +973,325 @@ const quiz = [
 	answer: 0
 }
 
+,
+{
+	q: 'Where does William Caxton belong to?',
+	options: ['England','Scotland', 'Welsh', 'Ireland'],
+	answer: 0
+}
+,
+{
+	q: 'In the middle age, what was most spoken in Scotland? ',
+	options: ['Gaelic','Scot', 'Anglo-Saxon', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'In the middle age, the Gaelic was most spoken in ________ ',
+	options: ['Scotland','England', 'Welsh', 'Ireland'],
+	answer: 0
+}
+,
+{
+	q: 'In the middle age, what language was developed from the Gaelic?',
+	options: ['The Scot','Scot Gaelic', 'Both', 'None'],
+	answer: 0
+}
+
+,
+{
+	q: 'Who wrote The Bruce?',
+	options: ['John Barbour','Geoffrey Chaucer', 'Robert the Bruce', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'The Battle of bannockburn was written by _________',
+	options: ['John Barbour','Geoffrey Chaucer', 'Robert the Bruce', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'What was The Bruce about?',
+	options: ['Battle of Bannockburn', 'Battle of Hastings', 'Battle of Agincourt', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'In the middle ages, what was built in England and Ireland for defense?',
+	options: ['Castle','Walls', 'Forts', 'Buildings'],
+	answer: 0
+}
+
+,
+{
+	q: 'The Lincoln cathedral is one of the Great cathedrals, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'The Windsor castle is in the ruins, is this true?',
+	options: ['False','True'],
+	answer: 0
+}
+,
+{
+	q: 'Which is one of the Great cathedrals?',
+	options: ['Lincoln Cathedral', 'Maiden Castle', 'York Minster', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'Which castles are still in use?',
+	options: ['Windsor and Edinburgh','Buckingham and Edinburgh', 'Buckingham and Maiden Castle', 'Windsor and Maiden Castle'],
+	answer: 0
+}
+
+,
+{
+	q: 'Several of the cathedrals had windows of stained glass, what stories does it tell about?',
+	options: ['Bible and Christian saints','Bible', 'Saints', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'Example of the stainted window glass cathedral?',
+	options: ['York Minster','Maiden Castle', 'Lincoln Cathedral', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, England was an important trading nation, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, English wool was a very imporant export, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+
+,
+{
+	q: 'In middle ages, English berries was a very imporant export, is this true?',
+	options: ['False','True'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, people came to Scotland from abroad for Trade and work, is this true?',
+	options: ['False','True'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, people came to England from abroad for Trade and work, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, weavers came from France, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+
+,
+{
+	q: 'In middle ages, Glass manufacturers came from Italy, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, engineers came from Germany, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, canal builders came from Holland, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, weavers came from Holland, is this true?',
+	options: ['False', 'True'],
+	answer: 0
+}
+
+
+,
+{
+	q: 'In middle ages, Glass manufacturers came from Germany is this true?',
+	options: ['False', 'True'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages,  Engineers came from France is this true?',
+	options: ['False', 'True'],
+	answer: 0
+}
+,
+{
+	q: 'In middle ages, canal builders came from Italy, is this true?',
+	options: ['False', 'True'],
+	answer: 0
+}
+,
+{
+	q: 'In which year, the civil war broke to decide the King of England?',
+	options: ['1455', '1400', '1200', '1255'],
+	answer: 0
+}
+
+,
+{
+	q: 'In 1455, a civil war broke to decide the King of Scotland?',
+	options: ['False', 'True'],
+	answer: 0
+}
+,
+{
+	q: 'In 1455, a civil war was broke between which houses?',
+	options: ['Lancester and York', 'Lancester and Cheshire', 'Lords and Commons', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'In 1455, a civil war was broke between houses of Lancester and York?',
+	options: ['True', 'False'],
+	answer: 0
+}
+,
+{
+	q: 'In 1455, a civil war was broke between houses of Lancester and Chester?',
+	options: ['False', 'True'],
+	answer: 0
+}
+,
+{
+	q: 'In 1455, what was the civil war broke between houses of Lancester and York called ?',
+	options: ['War of Roses', 'Battle of Bannockburn', 'Battle of Hastings', 'Battle of Agincourt'],
+	answer: 0
+}
+,
+{
+	q: 'What was the symbol of Lancester?',
+	options: ['Red Rose', 'White Rose', 'Both', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'What was the symbol of York?',
+	options: ['White Rose', 'Red Rose', 'Both', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'When did the war of roses end?',
+	options: ['1485', '1495', '1400', '1455'],
+	answer: 0
+}
+
+,
+{
+	q: 'What was the war of roses called?',
+	options: ['Battle of Bosworth field', 'Battle of Bannockburn', 'Battle of Hastings', 'Battle of Agincourt'],
+	answer: 0
+}
+,
+{
+	q: 'The war of roses was Battle of Bosworth field, is this true?',
+	options: ['True', 'False'],
+	answer: 0
+}
+,
+{
+	q: 'The war of roses was Battle of Bannockburn, is this true?',
+	options: ['False', 'True'],
+	answer: 0
+}
+,
+{
+	q: 'During the War of roses, who was the King of York?',
+	options: ['King Richard III', 'King Henry VII', 'Henry Tudor', 'King Henry VIII'],
+	answer: 0
+}
+
+,
+{
+	q: 'During the War of roses, who killed the King of York?',
+	options: ['Henry Tudor', 'King Richard III', 'King Richard I', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'Henry Tudor was the leader of _______ ',
+	options: ['House of Lancester', 'House of Cheshire', 'House of York', 'All'],
+	answer: 0
+}
+,
+{
+	q: 'The Leader of the House of Lancester was also known as  ___________',
+	options: ['King Henry VII', 'King Henry VIII', 'King Richard I', 'None'],
+	answer: 0
+}
+,
+{
+	q: 'King Henry VII was the leader of _____________',
+	options: ['House of Lancester', 'House of Cheshire', 'House of York', 'All'],
+	answer: 0
+}
+
+
+,
+{
+	q: 'King Henry VII married Elizabeth of York, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'King Henry VII married Victoria of York, is this true?',
+	options: ['False','True'],
+	answer: 0
+}
+,
+{
+	q: 'King Henry VII was the first king of the House of Tudor, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'Who was the first King of the House of the Tudor?',
+	options: ['King Henry VII', 'King Henry VIII', 'King Richard I', 'None'],
+	answer: 0
+}
+
+,
+{
+	q: 'What is the symbol of the House of Tudor?',
+	options: ['Red rose with a White rose inside','White rose with a Red rose inside','Red rose with a Green leaves','White rose with a Green leaves'],
+	answer: 0
+}
+,
+{
+	q: 'Red rose with a white rose inside was the symbol of House of Tudor, is this true?',
+	options: ['True','False'],
+	answer: 0
+}
+,
+{
+	q: 'White rose with a Red rose inside was the symbol of House of Tudor, is this true?',
+	options: ['False','True'],
+	answer: 0
+}
 
 
 
