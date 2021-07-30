@@ -274,7 +274,7 @@ function tryAgain(){
 
 function counter(){
 
-	var time = 1 * 60,
+	var time = 45 * 60,
 	    start = Date.now(),
 	    mins = document.getElementById('minutes'),
 	    secs = document.getElementById('seconds'),
